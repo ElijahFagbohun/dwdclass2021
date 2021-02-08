@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+  <html>
+   <head>
+       <title>Form Validaion</title>
+       <meta charset = "UTF-8" />
+       <meta name ="viewport" content = "width=device-width,initial-scale=1.0" />
+       <link rel="stylesheeet" href="css/formValidation2.css" />
+    
+         </head>
+         
+        <body>
+             <form>
+                 <div class="container">
+                     <div class="header">
+                     <h2>Create Account</h2>
+                     </div>
+
+                     <form class="form" id="form">
+                         <div class="form-control">
+                             <label>Username</label>
+                             <input type="text" placeholder="username" id="username" autocomplete="off" />
+                             <i class="far fa-check-circle icon"></i>
+                             <i class="fas fa-exclamation-circle icon"></i>
+                             <small>Error message</small>
+                         </div>
+
+                         <!--Email input-->
+                         <div class="form-control">
+                             <label>Email</label>
+                             <input type="text" placeholder="email@gmail.com" id="email" />
+                             <i class="far fa-check-circle icon"></i>
+                             <i class="fas fa-exclamation-circle icon"></i>
+                         </div>
+
+                         <!--password 1-->
+                         <div class="form-control">
+                             <label>Password</label>
+                             <input type="password" placeholder="password" id="password" />
+                             <i class="far fa-check-circle icon"></i>
+                             <i class="fas fa-exclamation-circle icon"></i>
+                         </div>
+
+                         <!--password check-->
+                         <div class="form-control">
+                             <label>Password Check</label>
+                             <input type="password" placeholder="passwordCheck" id="password2" />
+                             <i class="far fa-check-circle icon"></i>
+                             <i class="fas fa-exclamation-circle icon"></i>
+
+                         </div>
+                         <div class="form-control">
+                             <div class="outerbar">
+                                 <div class="innerbar"></div>
+                             </div>
+                             <small>Password strength</small>
+                         </div>
+                         <button type="submit">Submit</button>
+                     </form>
+                 </div>
+             </form>
+
+
+            <script src="javascript/formValidation2.js"></script>
+            <script src="fonts/fontawesome/js/all.js"></script>
+        </body>
+  </html>

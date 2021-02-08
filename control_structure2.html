@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+  <html>
+   <head>
+       <title>Array</title>
+       <meta charset = "UTF-8" />
+       <meta name ="viewport" content = "width=device-width,initial-scale=1.0" />
+       <style>
+        .box0{
+            background-color: #1a3263;
+            color: white;
+            width: 120px;
+        }
+        .box1{
+            display: flex;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+        }
+        input{
+            padding:.5rem;
+            font-size: 1rem;
+        }
+        small{
+            color: #454545;
+            padding: 1rem;
+        }
+        span{
+            padding: 1rem 2rem;
+            display: flex;
+            text-align: center;
+            align-items: center;
+        
+        }
+    </style>
+      
+     </head>
+         
+        <body>
+                <div class="box0">
+                    <span id="weekday"></span>
+                    <span id="person"></span>
+                    <h2 id="cars"></h2>
+                </div>
+                <div class="box1">
+                <h2>Enter Your Age</h2>
+                <input id="age" type="text" placeholder="Please Enter your name">
+                <hr>
+                <small id="errorMsg"></small>
+                <h2 id="colors"></h2>
+    
+                <button onclick="checkEligibility();">submit</button>
+            </div>
+            <div>
+                <div id="buttoncontainer"> 
+
+                </div>
+            </div>
+                <script src="javascript/control_structure2.js"></script>
+              
+        </body>
+  </html>

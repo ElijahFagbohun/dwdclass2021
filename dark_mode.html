@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+  <html>
+   <head>
+       <title>Array</title>
+       <meta charset = "UTF-8" />
+       <meta name ="viewport" content = "width=device-width,initial-scale=1.0" />
+       
+       <style>
+           *{
+               box-sizing: border-box;
+           }
+           body{
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               flex-direction: column;
+               min-height: 100vh;
+           }
+           h1{
+               font-weight: bolder;
+        
+           }
+           body.dark{
+               background-color: #1f1f11;
+               color: lightgreen;
+               transition: all .3s linear;
+
+           }
+           label{
+               user-select: none;
+           }
+           .toggle-container{
+               position: fixed;
+               top: 10px;
+               right: 10px;
+           }
+       </style>
+     </head>
+         
+        <body>
+           <div class="toggle-container">
+               <input type="checkbox" id="toggle" name="toggle" />
+               <label for="toggle">Toggle Theme</label>
+           </div>
+           <h1>This is darkmode</h1>
+           <p>In practice, the P – N junction is formed from a single mono<br> crystalline 
+               structure by adding carefully controlled amounts<br> 
+               of donor and acceptor impurities. In fabrication process,<br> 
+               the foremost requirement is to obtain </p>
+
+
+            <script>
+                const toggle = document.getElementById('toggle')
+
+                toggle.addEventListener('change', (e) => {
+                 document.body.classList.toggle('dark', e.target.checked);
+                })
+            </script>
+        </body>
+  </html>
